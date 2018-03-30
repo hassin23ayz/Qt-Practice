@@ -14,31 +14,84 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
-#include <QtWidgets/QPlainTextEdit>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTextEdit>
+#include <QtWidgets/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_MyDialog
 {
 public:
+    QVBoxLayout *verticalLayout;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *label;
+    QTextEdit *textEdit;
+    QHBoxLayout *horizontalLayout_2;
+    QHBoxLayout *horizontalLayout;
+    QSpacerItem *horizontalSpacer;
     QPushButton *pushButton;
-    QPlainTextEdit *plainTextEdit;
+    QPushButton *pushButton_2;
 
     void setupUi(QDialog *MyDialog)
     {
         if (MyDialog->objectName().isEmpty())
             MyDialog->setObjectName(QStringLiteral("MyDialog"));
-        MyDialog->resize(400, 300);
+        MyDialog->resize(364, 77);
+        verticalLayout = new QVBoxLayout(MyDialog);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        label = new QLabel(MyDialog);
+        label->setObjectName(QStringLiteral("label"));
+
+        horizontalLayout_3->addWidget(label);
+
+        textEdit = new QTextEdit(MyDialog);
+        textEdit->setObjectName(QStringLiteral("textEdit"));
+
+        horizontalLayout_3->addWidget(textEdit);
+
+
+        verticalLayout->addLayout(horizontalLayout_3);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalSpacer = new QSpacerItem(88, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer);
+
         pushButton = new QPushButton(MyDialog);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(140, 180, 106, 29));
-        plainTextEdit = new QPlainTextEdit(MyDialog);
-        plainTextEdit->setObjectName(QStringLiteral("plainTextEdit"));
-        plainTextEdit->setGeometry(QRect(63, 30, 251, 101));
+
+        horizontalLayout->addWidget(pushButton);
+
+        pushButton_2 = new QPushButton(MyDialog);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+
+        horizontalLayout->addWidget(pushButton_2);
+
+
+        horizontalLayout_2->addLayout(horizontalLayout);
+
+
+        verticalLayout->addLayout(horizontalLayout_2);
+
+#ifndef QT_NO_SHORTCUT
+        label->setBuddy(textEdit);
+#endif // QT_NO_SHORTCUT
+        QWidget::setTabOrder(textEdit, pushButton);
+        QWidget::setTabOrder(pushButton, pushButton_2);
 
         retranslateUi(MyDialog);
+        QObject::connect(pushButton, SIGNAL(clicked()), MyDialog, SLOT(accept()));
+        QObject::connect(pushButton_2, SIGNAL(clicked()), MyDialog, SLOT(close()));
 
         QMetaObject::connectSlotsByName(MyDialog);
     } // setupUi
@@ -46,7 +99,9 @@ public:
     void retranslateUi(QDialog *MyDialog)
     {
         MyDialog->setWindowTitle(QApplication::translate("MyDialog", "Dialog", nullptr));
-        pushButton->setText(QApplication::translate("MyDialog", "PushButton", nullptr));
+        label->setText(QApplication::translate("MyDialog", "Name:", nullptr));
+        pushButton->setText(QApplication::translate("MyDialog", "Ok", nullptr));
+        pushButton_2->setText(QApplication::translate("MyDialog", "Cancel", nullptr));
     } // retranslateUi
 
 };
