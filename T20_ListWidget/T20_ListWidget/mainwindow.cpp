@@ -3,6 +3,7 @@
 #include <QtGui>
 #include <QtCore>
 #include <QMessageBox>
+#include "device.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -11,8 +12,18 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     //setCentralWidget(ui->listWidget);
 
+    createDevices();
+
+    /*
     for(int i=0; i<16; i++){
         ui->listWidget->addItem("Device" + QString::number(i));
+    }*/
+
+    std::list<Device>::iterator it = devices.begin();
+    while(it != devices.end())
+    {
+        ui->listWidget->addItem("Device:" + (*it).getMacID());
+        it++;
     }
 }
 
@@ -31,4 +42,17 @@ void MainWindow::on_pushButton_clicked()
     QListWidgetItem* mDevice = ui->listWidget->currentItem();
     mDevice->setText("Bonjour");
     mDevice->setTextColor(Qt::green);
+}
+
+void MainWindow::createDevices()
+{
+    for(int i=0; i<16; i++){
+        Device mDevice;
+        mDevice.setMacID("AA-BB-CC-"+QString::number(i));
+        int ipArray[4] = {192,3,4,i};
+        mDevice.setIpAddr(ipArray);
+        mDevice.setPort(80+i);
+
+        devices.push_back(mDevice);
+    }
 }

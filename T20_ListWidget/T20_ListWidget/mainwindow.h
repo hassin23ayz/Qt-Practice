@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "device.h"
+#include <list>
 
 namespace Ui {
 class MainWindow;
@@ -17,13 +19,13 @@ public:
 
 private slots:
     void on_actionAbout_triggered();
-
-    void on_pushButton_2_clicked();
-
     void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
+    std::list<Device> devices;
+
+    void createDevices();
 };
 
 #endif // MAINWINDOW_H
