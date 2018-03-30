@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'mydialog.h'
+** Meta object code from reading C++ file 'dialog.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.10.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../T05_dialog_window/mydialog.h"
+#include "../T18_radio_button/dialog.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'mydialog.h' doesn't include <QObject>."
+#error "The header file 'dialog.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.10.1. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -20,27 +20,27 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_MyDialog_t {
+struct qt_meta_stringdata_Dialog_t {
     QByteArrayData data[3];
-    char stringdata0[32];
+    char stringdata0[30];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_MyDialog_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_Dialog_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_MyDialog_t qt_meta_stringdata_MyDialog = {
+static const qt_meta_stringdata_Dialog_t qt_meta_stringdata_Dialog = {
     {
-QT_MOC_LITERAL(0, 0, 8), // "MyDialog"
-QT_MOC_LITERAL(1, 9, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(2, 31, 0) // ""
+QT_MOC_LITERAL(0, 0, 6), // "Dialog"
+QT_MOC_LITERAL(1, 7, 21), // "on_pushButton_clicked"
+QT_MOC_LITERAL(2, 29, 0) // ""
 
     },
-    "MyDialog\0on_pushButton_clicked\0"
+    "Dialog\0on_pushButton_clicked\0"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_MyDialog[] = {
+static const uint qt_meta_data_Dialog[] = {
 
  // content:
        7,       // revision
@@ -62,10 +62,10 @@ static const uint qt_meta_data_MyDialog[] = {
        0        // eod
 };
 
-void MyDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Dialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        MyDialog *_t = static_cast<MyDialog *>(_o);
+        Dialog *_t = static_cast<Dialog *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_pushButton_clicked(); break;
@@ -75,26 +75,26 @@ void MyDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject MyDialog::staticMetaObject = {
-    { &QDialog::staticMetaObject, qt_meta_stringdata_MyDialog.data,
-      qt_meta_data_MyDialog,  qt_static_metacall, nullptr, nullptr}
+QT_INIT_METAOBJECT const QMetaObject Dialog::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_Dialog.data,
+      qt_meta_data_Dialog,  qt_static_metacall, nullptr, nullptr}
 };
 
 
-const QMetaObject *MyDialog::metaObject() const
+const QMetaObject *Dialog::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MyDialog::qt_metacast(const char *_clname)
+void *Dialog::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_MyDialog.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_Dialog.stringdata0))
         return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
 
-int MyDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Dialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
