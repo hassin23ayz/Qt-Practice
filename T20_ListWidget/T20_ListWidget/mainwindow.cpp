@@ -40,7 +40,6 @@ void MainWindow::on_actionAbout_triggered()
 void MainWindow::on_pushButton_clicked()
 {
     QListWidgetItem* mDevice = ui->listWidget->currentItem();
-    mDevice->setText("Bonjour");
     mDevice->setTextColor(Qt::green);
 }
 
