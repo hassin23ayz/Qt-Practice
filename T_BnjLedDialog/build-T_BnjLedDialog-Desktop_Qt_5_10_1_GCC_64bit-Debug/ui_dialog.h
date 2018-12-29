@@ -36,7 +36,7 @@ class Ui_Dialog
 {
 public:
     QGroupBox *groupBox;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout_13;
     QRadioButton *radioButton;
     QRadioButton *radioButton_2;
@@ -44,7 +44,7 @@ public:
     QPushButton *pushButton_10;
     QPushButton *pushButton_3;
     QGroupBox *groupBox_2;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QTimeEdit *timeEdit;
     QPushButton *pushButton;
@@ -77,13 +77,13 @@ public:
     QLabel *label_22;
     QLabel *label_20;
     QLabel *label_17;
-    QWidget *widget2;
+    QWidget *layoutWidget2;
     QFormLayout *formLayout;
     QLabel *label_21;
     QLabel *label_19;
     QLabel *label_18;
     QGroupBox *groupBox_5;
-    QWidget *widget3;
+    QWidget *layoutWidget3;
     QHBoxLayout *horizontalLayout;
     QLabel *label_23;
     QRadioButton *radioButton_4;
@@ -96,11 +96,11 @@ public:
     QRadioButton *radioButton_11;
     QRadioButton *radioButton_12;
     QRadioButton *radioButton_13;
-    QWidget *widget4;
+    QWidget *layoutWidget4;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_26;
     QTimeEdit *timeEdit_2;
-    QWidget *widget5;
+    QWidget *layoutWidget5;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_7;
     QLabel *label_24;
@@ -122,28 +122,28 @@ public:
     QLabel *label_29;
     QSlider *horizontalSlider_5;
     QProgressBar *progressBar_5;
-    QWidget *widget6;
+    QWidget *layoutWidget6;
     QHBoxLayout *horizontalLayout_12;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
     QGroupBox *groupBox_6;
-    QWidget *widget7;
+    QWidget *layoutWidget7;
     QVBoxLayout *verticalLayout_2;
     QHBoxLayout *horizontalLayout_16;
     QPushButton *pushButton_6;
     QCheckBox *checkBox;
     QPushButton *pushButton_7;
-    QWidget *widget8;
+    QWidget *layoutWidget8;
     QVBoxLayout *verticalLayout_4;
     QLabel *label_31;
     QLabel *label_32;
     QLabel *label_34;
-    QWidget *widget9;
+    QWidget *layoutWidget9;
     QVBoxLayout *verticalLayout_5;
     QLabel *label_30;
     QLabel *label_33;
     QLabel *label_35;
-    QWidget *widget10;
+    QWidget *layoutWidget10;
     QVBoxLayout *verticalLayout_3;
     QPushButton *pushButton_9;
     QPushButton *pushButton_8;
@@ -156,35 +156,35 @@ public:
         groupBox = new QGroupBox(Dialog);
         groupBox->setObjectName(QStringLiteral("groupBox"));
         groupBox->setGeometry(QRect(10, 10, 531, 81));
-        widget = new QWidget(groupBox);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(10, 40, 483, 31));
-        horizontalLayout_13 = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(groupBox);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 40, 483, 31));
+        horizontalLayout_13 = new QHBoxLayout(layoutWidget);
         horizontalLayout_13->setSpacing(6);
         horizontalLayout_13->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_13->setObjectName(QStringLiteral("horizontalLayout_13"));
         horizontalLayout_13->setContentsMargins(0, 0, 0, 0);
-        radioButton = new QRadioButton(widget);
+        radioButton = new QRadioButton(layoutWidget);
         radioButton->setObjectName(QStringLiteral("radioButton"));
 
         horizontalLayout_13->addWidget(radioButton);
 
-        radioButton_2 = new QRadioButton(widget);
+        radioButton_2 = new QRadioButton(layoutWidget);
         radioButton_2->setObjectName(QStringLiteral("radioButton_2"));
 
         horizontalLayout_13->addWidget(radioButton_2);
 
-        radioButton_3 = new QRadioButton(widget);
+        radioButton_3 = new QRadioButton(layoutWidget);
         radioButton_3->setObjectName(QStringLiteral("radioButton_3"));
 
         horizontalLayout_13->addWidget(radioButton_3);
 
-        pushButton_10 = new QPushButton(widget);
+        pushButton_10 = new QPushButton(layoutWidget);
         pushButton_10->setObjectName(QStringLiteral("pushButton_10"));
 
         horizontalLayout_13->addWidget(pushButton_10);
 
-        pushButton_3 = new QPushButton(widget);
+        pushButton_3 = new QPushButton(layoutWidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
 
         horizontalLayout_13->addWidget(pushButton_3);
@@ -192,25 +192,25 @@ public:
         groupBox_2 = new QGroupBox(Dialog);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
         groupBox_2->setGeometry(QRect(10, 100, 361, 81));
-        widget1 = new QWidget(groupBox_2);
-        widget1->setObjectName(QStringLiteral("widget1"));
-        widget1->setGeometry(QRect(10, 40, 331, 31));
-        horizontalLayout_2 = new QHBoxLayout(widget1);
+        layoutWidget1 = new QWidget(groupBox_2);
+        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(10, 40, 331, 31));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        timeEdit = new QTimeEdit(widget1);
+        timeEdit = new QTimeEdit(layoutWidget1);
         timeEdit->setObjectName(QStringLiteral("timeEdit"));
 
         horizontalLayout_2->addWidget(timeEdit);
 
-        pushButton = new QPushButton(widget1);
+        pushButton = new QPushButton(layoutWidget1);
         pushButton->setObjectName(QStringLiteral("pushButton"));
 
         horizontalLayout_2->addWidget(pushButton);
 
-        pushButton_2 = new QPushButton(widget1);
+        pushButton_2 = new QPushButton(layoutWidget1);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
 
         horizontalLayout_2->addWidget(pushButton_2);
@@ -284,6 +284,7 @@ public:
         splitter_5->setOrientation(Qt::Vertical);
         lcdNumber_11 = new QLCDNumber(splitter_5);
         lcdNumber_11->setObjectName(QStringLiteral("lcdNumber_11"));
+        lcdNumber_11->setProperty("value", QVariant(30));
         splitter_5->addWidget(lcdNumber_11);
         lcdNumber_10 = new QLCDNumber(splitter_5);
         lcdNumber_10->setObjectName(QStringLiteral("lcdNumber_10"));
@@ -304,25 +305,25 @@ public:
         label_17 = new QLabel(splitter_6);
         label_17->setObjectName(QStringLiteral("label_17"));
         splitter_6->addWidget(label_17);
-        widget2 = new QWidget(groupBox_4);
-        widget2->setObjectName(QStringLiteral("widget2"));
-        widget2->setGeometry(QRect(150, 40, 21, 81));
-        formLayout = new QFormLayout(widget2);
+        layoutWidget2 = new QWidget(groupBox_4);
+        layoutWidget2->setObjectName(QStringLiteral("layoutWidget2"));
+        layoutWidget2->setGeometry(QRect(150, 40, 21, 81));
+        formLayout = new QFormLayout(layoutWidget2);
         formLayout->setSpacing(6);
         formLayout->setContentsMargins(11, 11, 11, 11);
         formLayout->setObjectName(QStringLiteral("formLayout"));
         formLayout->setContentsMargins(0, 0, 0, 0);
-        label_21 = new QLabel(widget2);
+        label_21 = new QLabel(layoutWidget2);
         label_21->setObjectName(QStringLiteral("label_21"));
 
         formLayout->setWidget(0, QFormLayout::LabelRole, label_21);
 
-        label_19 = new QLabel(widget2);
+        label_19 = new QLabel(layoutWidget2);
         label_19->setObjectName(QStringLiteral("label_19"));
 
         formLayout->setWidget(1, QFormLayout::LabelRole, label_19);
 
-        label_18 = new QLabel(widget2);
+        label_18 = new QLabel(layoutWidget2);
         label_18->setObjectName(QStringLiteral("label_18"));
 
         formLayout->setWidget(2, QFormLayout::LabelRole, label_18);
@@ -330,91 +331,91 @@ public:
         groupBox_5 = new QGroupBox(Dialog);
         groupBox_5->setObjectName(QStringLiteral("groupBox_5"));
         groupBox_5->setGeometry(QRect(10, 190, 531, 361));
-        widget3 = new QWidget(groupBox_5);
-        widget3->setObjectName(QStringLiteral("widget3"));
-        widget3->setGeometry(QRect(10, 30, 514, 28));
-        horizontalLayout = new QHBoxLayout(widget3);
+        layoutWidget3 = new QWidget(groupBox_5);
+        layoutWidget3->setObjectName(QStringLiteral("layoutWidget3"));
+        layoutWidget3->setGeometry(QRect(10, 30, 514, 28));
+        horizontalLayout = new QHBoxLayout(layoutWidget3);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        label_23 = new QLabel(widget3);
+        label_23 = new QLabel(layoutWidget3);
         label_23->setObjectName(QStringLiteral("label_23"));
 
         horizontalLayout->addWidget(label_23);
 
-        radioButton_4 = new QRadioButton(widget3);
+        radioButton_4 = new QRadioButton(layoutWidget3);
         radioButton_4->setObjectName(QStringLiteral("radioButton_4"));
 
         horizontalLayout->addWidget(radioButton_4);
 
-        radioButton_5 = new QRadioButton(widget3);
+        radioButton_5 = new QRadioButton(layoutWidget3);
         radioButton_5->setObjectName(QStringLiteral("radioButton_5"));
 
         horizontalLayout->addWidget(radioButton_5);
 
-        radioButton_6 = new QRadioButton(widget3);
+        radioButton_6 = new QRadioButton(layoutWidget3);
         radioButton_6->setObjectName(QStringLiteral("radioButton_6"));
 
         horizontalLayout->addWidget(radioButton_6);
 
-        radioButton_7 = new QRadioButton(widget3);
+        radioButton_7 = new QRadioButton(layoutWidget3);
         radioButton_7->setObjectName(QStringLiteral("radioButton_7"));
 
         horizontalLayout->addWidget(radioButton_7);
 
-        radioButton_8 = new QRadioButton(widget3);
+        radioButton_8 = new QRadioButton(layoutWidget3);
         radioButton_8->setObjectName(QStringLiteral("radioButton_8"));
 
         horizontalLayout->addWidget(radioButton_8);
 
-        radioButton_9 = new QRadioButton(widget3);
+        radioButton_9 = new QRadioButton(layoutWidget3);
         radioButton_9->setObjectName(QStringLiteral("radioButton_9"));
 
         horizontalLayout->addWidget(radioButton_9);
 
-        radioButton_10 = new QRadioButton(widget3);
+        radioButton_10 = new QRadioButton(layoutWidget3);
         radioButton_10->setObjectName(QStringLiteral("radioButton_10"));
 
         horizontalLayout->addWidget(radioButton_10);
 
-        radioButton_11 = new QRadioButton(widget3);
+        radioButton_11 = new QRadioButton(layoutWidget3);
         radioButton_11->setObjectName(QStringLiteral("radioButton_11"));
 
         horizontalLayout->addWidget(radioButton_11);
 
-        radioButton_12 = new QRadioButton(widget3);
+        radioButton_12 = new QRadioButton(layoutWidget3);
         radioButton_12->setObjectName(QStringLiteral("radioButton_12"));
 
         horizontalLayout->addWidget(radioButton_12);
 
-        radioButton_13 = new QRadioButton(widget3);
+        radioButton_13 = new QRadioButton(layoutWidget3);
         radioButton_13->setObjectName(QStringLiteral("radioButton_13"));
 
         horizontalLayout->addWidget(radioButton_13);
 
-        widget4 = new QWidget(groupBox_5);
-        widget4->setObjectName(QStringLiteral("widget4"));
-        widget4->setGeometry(QRect(11, 71, 181, 31));
-        horizontalLayout_3 = new QHBoxLayout(widget4);
+        layoutWidget4 = new QWidget(groupBox_5);
+        layoutWidget4->setObjectName(QStringLiteral("layoutWidget4"));
+        layoutWidget4->setGeometry(QRect(11, 71, 187, 31));
+        horizontalLayout_3 = new QHBoxLayout(layoutWidget4);
         horizontalLayout_3->setSpacing(6);
         horizontalLayout_3->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
-        label_26 = new QLabel(widget4);
+        label_26 = new QLabel(layoutWidget4);
         label_26->setObjectName(QStringLiteral("label_26"));
 
         horizontalLayout_3->addWidget(label_26);
 
-        timeEdit_2 = new QTimeEdit(widget4);
+        timeEdit_2 = new QTimeEdit(layoutWidget4);
         timeEdit_2->setObjectName(QStringLiteral("timeEdit_2"));
 
         horizontalLayout_3->addWidget(timeEdit_2);
 
-        widget5 = new QWidget(groupBox_5);
-        widget5->setObjectName(QStringLiteral("widget5"));
-        widget5->setGeometry(QRect(10, 120, 511, 181));
-        verticalLayout = new QVBoxLayout(widget5);
+        layoutWidget5 = new QWidget(groupBox_5);
+        layoutWidget5->setObjectName(QStringLiteral("layoutWidget5"));
+        layoutWidget5->setGeometry(QRect(10, 120, 511, 181));
+        verticalLayout = new QVBoxLayout(layoutWidget5);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
@@ -422,18 +423,18 @@ public:
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setSpacing(6);
         horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
-        label_24 = new QLabel(widget5);
+        label_24 = new QLabel(layoutWidget5);
         label_24->setObjectName(QStringLiteral("label_24"));
 
         horizontalLayout_7->addWidget(label_24);
 
-        horizontalSlider = new QSlider(widget5);
+        horizontalSlider = new QSlider(layoutWidget5);
         horizontalSlider->setObjectName(QStringLiteral("horizontalSlider"));
         horizontalSlider->setOrientation(Qt::Horizontal);
 
         horizontalLayout_7->addWidget(horizontalSlider);
 
-        progressBar = new QProgressBar(widget5);
+        progressBar = new QProgressBar(layoutWidget5);
         progressBar->setObjectName(QStringLiteral("progressBar"));
         progressBar->setValue(24);
 
@@ -445,18 +446,18 @@ public:
         horizontalLayout_8 = new QHBoxLayout();
         horizontalLayout_8->setSpacing(6);
         horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
-        label_25 = new QLabel(widget5);
+        label_25 = new QLabel(layoutWidget5);
         label_25->setObjectName(QStringLiteral("label_25"));
 
         horizontalLayout_8->addWidget(label_25);
 
-        horizontalSlider_2 = new QSlider(widget5);
+        horizontalSlider_2 = new QSlider(layoutWidget5);
         horizontalSlider_2->setObjectName(QStringLiteral("horizontalSlider_2"));
         horizontalSlider_2->setOrientation(Qt::Horizontal);
 
         horizontalLayout_8->addWidget(horizontalSlider_2);
 
-        progressBar_2 = new QProgressBar(widget5);
+        progressBar_2 = new QProgressBar(layoutWidget5);
         progressBar_2->setObjectName(QStringLiteral("progressBar_2"));
         progressBar_2->setValue(24);
 
@@ -468,18 +469,18 @@ public:
         horizontalLayout_9 = new QHBoxLayout();
         horizontalLayout_9->setSpacing(6);
         horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
-        label_27 = new QLabel(widget5);
+        label_27 = new QLabel(layoutWidget5);
         label_27->setObjectName(QStringLiteral("label_27"));
 
         horizontalLayout_9->addWidget(label_27);
 
-        horizontalSlider_3 = new QSlider(widget5);
+        horizontalSlider_3 = new QSlider(layoutWidget5);
         horizontalSlider_3->setObjectName(QStringLiteral("horizontalSlider_3"));
         horizontalSlider_3->setOrientation(Qt::Horizontal);
 
         horizontalLayout_9->addWidget(horizontalSlider_3);
 
-        progressBar_3 = new QProgressBar(widget5);
+        progressBar_3 = new QProgressBar(layoutWidget5);
         progressBar_3->setObjectName(QStringLiteral("progressBar_3"));
         progressBar_3->setValue(24);
 
@@ -491,18 +492,18 @@ public:
         horizontalLayout_10 = new QHBoxLayout();
         horizontalLayout_10->setSpacing(6);
         horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
-        label_28 = new QLabel(widget5);
+        label_28 = new QLabel(layoutWidget5);
         label_28->setObjectName(QStringLiteral("label_28"));
 
         horizontalLayout_10->addWidget(label_28);
 
-        horizontalSlider_4 = new QSlider(widget5);
+        horizontalSlider_4 = new QSlider(layoutWidget5);
         horizontalSlider_4->setObjectName(QStringLiteral("horizontalSlider_4"));
         horizontalSlider_4->setOrientation(Qt::Horizontal);
 
         horizontalLayout_10->addWidget(horizontalSlider_4);
 
-        progressBar_4 = new QProgressBar(widget5);
+        progressBar_4 = new QProgressBar(layoutWidget5);
         progressBar_4->setObjectName(QStringLiteral("progressBar_4"));
         progressBar_4->setValue(24);
 
@@ -514,18 +515,18 @@ public:
         horizontalLayout_11 = new QHBoxLayout();
         horizontalLayout_11->setSpacing(6);
         horizontalLayout_11->setObjectName(QStringLiteral("horizontalLayout_11"));
-        label_29 = new QLabel(widget5);
+        label_29 = new QLabel(layoutWidget5);
         label_29->setObjectName(QStringLiteral("label_29"));
 
         horizontalLayout_11->addWidget(label_29);
 
-        horizontalSlider_5 = new QSlider(widget5);
+        horizontalSlider_5 = new QSlider(layoutWidget5);
         horizontalSlider_5->setObjectName(QStringLiteral("horizontalSlider_5"));
         horizontalSlider_5->setOrientation(Qt::Horizontal);
 
         horizontalLayout_11->addWidget(horizontalSlider_5);
 
-        progressBar_5 = new QProgressBar(widget5);
+        progressBar_5 = new QProgressBar(layoutWidget5);
         progressBar_5->setObjectName(QStringLiteral("progressBar_5"));
         progressBar_5->setValue(24);
 
@@ -534,20 +535,20 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_11);
 
-        widget6 = new QWidget(groupBox_5);
-        widget6->setObjectName(QStringLiteral("widget6"));
-        widget6->setGeometry(QRect(10, 310, 169, 31));
-        horizontalLayout_12 = new QHBoxLayout(widget6);
+        layoutWidget6 = new QWidget(groupBox_5);
+        layoutWidget6->setObjectName(QStringLiteral("layoutWidget6"));
+        layoutWidget6->setGeometry(QRect(10, 310, 169, 31));
+        horizontalLayout_12 = new QHBoxLayout(layoutWidget6);
         horizontalLayout_12->setSpacing(6);
         horizontalLayout_12->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
         horizontalLayout_12->setContentsMargins(0, 0, 0, 0);
-        pushButton_4 = new QPushButton(widget6);
+        pushButton_4 = new QPushButton(layoutWidget6);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
 
         horizontalLayout_12->addWidget(pushButton_4);
 
-        pushButton_5 = new QPushButton(widget6);
+        pushButton_5 = new QPushButton(layoutWidget6);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
 
         horizontalLayout_12->addWidget(pushButton_5);
@@ -555,10 +556,10 @@ public:
         groupBox_6 = new QGroupBox(Dialog);
         groupBox_6->setObjectName(QStringLiteral("groupBox_6"));
         groupBox_6->setGeometry(QRect(560, 20, 331, 191));
-        widget7 = new QWidget(groupBox_6);
-        widget7->setObjectName(QStringLiteral("widget7"));
-        widget7->setGeometry(QRect(10, 120, 272, 69));
-        verticalLayout_2 = new QVBoxLayout(widget7);
+        layoutWidget7 = new QWidget(groupBox_6);
+        layoutWidget7->setObjectName(QStringLiteral("layoutWidget7"));
+        layoutWidget7->setGeometry(QRect(10, 120, 272, 69));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget7);
         verticalLayout_2->setSpacing(6);
         verticalLayout_2->setContentsMargins(11, 11, 11, 11);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
@@ -566,12 +567,12 @@ public:
         horizontalLayout_16 = new QHBoxLayout();
         horizontalLayout_16->setSpacing(6);
         horizontalLayout_16->setObjectName(QStringLiteral("horizontalLayout_16"));
-        pushButton_6 = new QPushButton(widget7);
+        pushButton_6 = new QPushButton(layoutWidget7);
         pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
 
         horizontalLayout_16->addWidget(pushButton_6);
 
-        checkBox = new QCheckBox(widget7);
+        checkBox = new QCheckBox(layoutWidget7);
         checkBox->setObjectName(QStringLiteral("checkBox"));
 
         horizontalLayout_16->addWidget(checkBox);
@@ -579,77 +580,82 @@ public:
 
         verticalLayout_2->addLayout(horizontalLayout_16);
 
-        pushButton_7 = new QPushButton(widget7);
+        pushButton_7 = new QPushButton(layoutWidget7);
         pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
 
         verticalLayout_2->addWidget(pushButton_7);
 
-        widget8 = new QWidget(groupBox_6);
-        widget8->setObjectName(QStringLiteral("widget8"));
-        widget8->setGeometry(QRect(70, 30, 251, 76));
-        verticalLayout_4 = new QVBoxLayout(widget8);
+        layoutWidget8 = new QWidget(groupBox_6);
+        layoutWidget8->setObjectName(QStringLiteral("layoutWidget8"));
+        layoutWidget8->setGeometry(QRect(70, 30, 251, 76));
+        verticalLayout_4 = new QVBoxLayout(layoutWidget8);
         verticalLayout_4->setSpacing(6);
         verticalLayout_4->setContentsMargins(11, 11, 11, 11);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
-        label_31 = new QLabel(widget8);
+        label_31 = new QLabel(layoutWidget8);
         label_31->setObjectName(QStringLiteral("label_31"));
 
         verticalLayout_4->addWidget(label_31);
 
-        label_32 = new QLabel(widget8);
+        label_32 = new QLabel(layoutWidget8);
         label_32->setObjectName(QStringLiteral("label_32"));
 
         verticalLayout_4->addWidget(label_32);
 
-        label_34 = new QLabel(widget8);
+        label_34 = new QLabel(layoutWidget8);
         label_34->setObjectName(QStringLiteral("label_34"));
 
         verticalLayout_4->addWidget(label_34);
 
-        widget9 = new QWidget(groupBox_6);
-        widget9->setObjectName(QStringLiteral("widget9"));
-        widget9->setGeometry(QRect(11, 30, 55, 76));
-        verticalLayout_5 = new QVBoxLayout(widget9);
+        layoutWidget9 = new QWidget(groupBox_6);
+        layoutWidget9->setObjectName(QStringLiteral("layoutWidget9"));
+        layoutWidget9->setGeometry(QRect(11, 30, 55, 76));
+        verticalLayout_5 = new QVBoxLayout(layoutWidget9);
         verticalLayout_5->setSpacing(6);
         verticalLayout_5->setContentsMargins(11, 11, 11, 11);
         verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
         verticalLayout_5->setContentsMargins(0, 0, 0, 0);
-        label_30 = new QLabel(widget9);
+        label_30 = new QLabel(layoutWidget9);
         label_30->setObjectName(QStringLiteral("label_30"));
 
         verticalLayout_5->addWidget(label_30);
 
-        label_33 = new QLabel(widget9);
+        label_33 = new QLabel(layoutWidget9);
         label_33->setObjectName(QStringLiteral("label_33"));
 
         verticalLayout_5->addWidget(label_33);
 
-        label_35 = new QLabel(widget9);
+        label_35 = new QLabel(layoutWidget9);
         label_35->setObjectName(QStringLiteral("label_35"));
 
         verticalLayout_5->addWidget(label_35);
 
-        widget10 = new QWidget(Dialog);
-        widget10->setObjectName(QStringLiteral("widget10"));
-        widget10->setGeometry(QRect(760, 470, 102, 67));
-        verticalLayout_3 = new QVBoxLayout(widget10);
+        layoutWidget10 = new QWidget(Dialog);
+        layoutWidget10->setObjectName(QStringLiteral("layoutWidget10"));
+        layoutWidget10->setGeometry(QRect(760, 470, 102, 67));
+        verticalLayout_3 = new QVBoxLayout(layoutWidget10);
         verticalLayout_3->setSpacing(6);
         verticalLayout_3->setContentsMargins(11, 11, 11, 11);
         verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
-        pushButton_9 = new QPushButton(widget10);
+        pushButton_9 = new QPushButton(layoutWidget10);
         pushButton_9->setObjectName(QStringLiteral("pushButton_9"));
 
         verticalLayout_3->addWidget(pushButton_9);
 
-        pushButton_8 = new QPushButton(widget10);
+        pushButton_8 = new QPushButton(layoutWidget10);
         pushButton_8->setObjectName(QStringLiteral("pushButton_8"));
 
         verticalLayout_3->addWidget(pushButton_8);
 
 
         retranslateUi(Dialog);
+        QObject::connect(horizontalSlider, SIGNAL(valueChanged(int)), progressBar, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_2, SIGNAL(valueChanged(int)), progressBar_2, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_3, SIGNAL(valueChanged(int)), progressBar_3, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_4, SIGNAL(valueChanged(int)), progressBar_4, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_5, SIGNAL(valueChanged(int)), progressBar_5, SLOT(setValue(int)));
 
         QMetaObject::connectSlotsByName(Dialog);
     } // setupUi
